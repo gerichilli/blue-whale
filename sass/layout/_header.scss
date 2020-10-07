@@ -1,0 +1,39 @@
+.header {
+    height: 85vh;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.8),rgba($color-primary, 0.8)), url(../img/header-bg-small.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    }
+
+    @media only screen and  (min-resolution: 192dpi) and (min-width: 600px), 
+                            (min-width: 125em) {
+                                height: 95vh;
+                                background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.8),rgba($color-primary, 0.8)), url(../img/header-bg.jpeg);
+    }
+
+    @include respond(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+    }
+
+    &__logo {
+        height: 6rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+}

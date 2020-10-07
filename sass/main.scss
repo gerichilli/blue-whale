@@ -1,0 +1,40 @@
+/*
+COLORS:
+
+Light green: #93c8bf
+Medium green: #b2cf88 
+Light yellow: #f1deca
+Medium pink: #eaa3b5
+*/
+
+@import "abstracts/functions";
+@import "abstracts/mixin";
+@import "abstracts/variables";
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/bg-video";
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/form";
+@import "components/popup";
+@import "components/story";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";
+
+
+
+
+
+
+
+
